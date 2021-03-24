@@ -28,8 +28,9 @@ body {
 
 main {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
-  padding: 25px;
+  
+  background-image: linear-gradient(rgb(103, 106, 107));
+  padding: 30px;
 }
 
 .search-box {
@@ -47,12 +48,12 @@ main {
   border-radius: 25px 25px 25px 25px;
   margin-top: -10px;
 
-  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px rgba(173, 173, 182, 0.2);
   
-  color: #313131;
+  color: #3a3838;
   font-size: 20px;
 
-  transition: 0.4s ease;
+  transition: 0.4s ease-out;
 }
 
 .search-box .search-bar:focus {
@@ -63,7 +64,7 @@ main {
 .location-box .location {
   color: #FFF;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
@@ -72,7 +73,7 @@ main {
   color: #FFF;
   font-size: 20px;
   font-weight: 300;
-  font-style: italic;
+  margin-top: 10px;
   text-align: center;
   text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
 }
@@ -85,7 +86,7 @@ main {
   position: relative;
   display: inline-block;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(250, 243, 243, 0.2);
   border-radius: 16px;
 
   padding: 15px 25px;
@@ -96,12 +97,12 @@ main {
 
   text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
   text-align: center;
-  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 6px rgba(63, 62, 62, 0.2);
 }
 
 .weather-box .weather {
   color: #FFF;
   font-size: 48px;
   font-weight: 700;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-shadow: 3px 3px rgba(37, 37, 39, 0.5);
 }
