@@ -34,14 +34,38 @@ function App() {
     return `${day} ${date} ${month} ${year}`
   }
 
+  let changeBackground = (w) => {
+    if(typeof w != "undefined"){
+      console.log(`W: ${w.weather[0]}`);
+      if(w.weather[0].main === "Clouds"){
+        console.log(`Weather: ${w.weather[0].main}`);
+        return 'app cloudy';
+      }
+      else if(w.weather[0].main === "Rain"){
+        return 'app rainy';
+      }
+      else if(w.weather[0].main === "Clear"){
+        return 'app sunny';
+      }
+      
+    }
+    else {
+      return 'app';
+    }
+  }
+  
+  //console.log("Weather: "+JSON.stringify(weather));
+  //changeBackground(weather)
   return (
-    <div className={(typeof weather.main != "undefined") ? ((weather.main.temp > 16) ? 'app warm' : 'app') : 'app'}>
+    <div className={(typeof weather.main != "undefined") ? changeBackground(weather) : 'app'}>
+      
+      
       <main>
         <div className="search-box">
           <input 
             type="text"
             className="search-bar"
-            placeholder="Search..."
+            placeholder="City Name, State, Country"
             onChange={e => setQuery(e.target.value)}
             value={query}
             onKeyPress={search}
